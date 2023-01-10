@@ -1,0 +1,14 @@
+:root{
+    --bg-body: #6d81d1;
+    --cor-fonte: #b9b9b9;
+    --cor-fonte-secundaria: #686868;
+    --cor-destaque: #5870D1;
+    --sombra: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    --branco: #ffffff;
+    --preto: #000000;
+    --cor-botao-concluir: #94D158;
+    --cor-botao-editar: #5870D1;
+    --cor-botao-excluir: #D15B65;
+
+    --fonte-principal: "Roboto", sans-serif;
+}

@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="pr-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Tarefas</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="cabecalho">
+                <h1 class="cabecalho__titulo">Lista de Tarefas</h1>
+            </header>
+            <form action="#" class="formulario" id="todo-form">
+                <p class="formulario__titulo">Adicione sua tarefa</p>
+                <div class="formulario__control">
+                    <input type="text" id="todo-input" class="formulario__input" placeholder="O que você vai fazer?">
+                    <button type="submit" id="todo-adicionar" aria-label="Adicionar Tarefa" class="formulario__botao">
+                        <i class="fa-solid fa-plus" ></i>
+                    </button>
+                </div>
+            </form>
+
+            <form action="#" class="formulario hide" id="editar-form">
+                <p class="formulario__titulo">Edite sua tarefa</p>
+                <div class="formulario__control">
+                    <input type="text" id="editar-input" class="formulario__input">
+                    <button type="submit" id="todo-editar" aria-label="Concluir Edição" class="formulario__botao">
+                        <i class="fa-solid fa-check-double"></i>
+                    </button>
+                    <button type="button" id="todo-cancelar" aria-label="Cancelar Edição" class="formulario__botao">
+                        <i class="fa-solid fa-ban"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="toolbar">
+                <div class="pesquisa">
+                    <h4 class="toolbar__titulo">Pesquisar:</h4>
+                    <input type="text" id="input-pesquisa" class="formulario__input" placeholder="Buscar...">
+                </div>
+                <div class="filtro">
+                    <h4 class="toolbar__titulo">Filtrar:</h4>
+                    <select id="select-filtro">
+                        <option value="todos">Todos</option>
+                        <option value="concluida">Concluídos</option>
+                        <option value="to-do">A fazer</option>
+                    </select>
+                </div>
+            </div>
+
+            <table id="tabela-tarefas">
+                <thead>
+                    <th>Tarefa</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="todo-tabela">
+                    <tr class="tarefa to-do">
+                        <td class="tarefa__nome">Comprar Água</td>
+                        <td class="tarefa__acoes">
+                            <button type="button" aria-label="Concluir Tarefa" class="formulario__botao concluir-tarefa">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+                            <button type="button" aria-label="Editar Tarefa" class="formulario__botao editar-tarefa">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button type="button" aria-label="Apagar Tarefa" class="formulario__botao apagar-tarefa">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
