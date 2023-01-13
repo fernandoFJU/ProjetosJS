@@ -1,0 +1,12 @@
+:root{
+    --bg-body: #ecf5ff;
+    --cor-fonte: #333333;
+    --cor-titulo: #56a5eb;
+    --cor-botao: #56a5eb;
+    --branco: #ffffff;
+    --preto: #000000;
+    
+    --sombra: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, .5);
+
+    --fonte-principal: "Montserrat", sans-serif;
+}

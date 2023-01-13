@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Média</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        
+        <header>
+            <h1>Calculadora de Média</h1>
+        </header>
+
+        <form action="#" method="post" id="formulario">
+            <div class="form-group">
+                <label for="nota1">Nota 1</label>
+                <input type="number" id="nota1" min="0.0" max="10.0" step="0.1" required>
+                <span class="mensagem-erro"></span>
+            </div>
+            <div class="form-group">
+                <label for="nota2">Nota 2</label>
+                <input type="number" id="nota2" min="0.0" max="10.0" step="0.1" required>
+                <span class="mensagem-erro"></span>
+            </div>
+            <div class="form-group">
+                <label for="nota3">Nota 3</label>
+                <input type="number" id="nota3" min="0.0" max="10.0" step="0.1" required>
+                <span class="mensagem-erro"></span>
+            </div>
+            <div class="form-group">
+                <label for="nota4">Nota 4</label>
+                <input type="number" id="nota4" min="0.0" max="10.0" step="0.1" required>
+                <span class="mensagem-erro"></span>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="botao" id="btnCalcular">Calcular</button>
+                <button type="reset" class="botao" id="btnLimpar">Limpar</button>
+            </div>
+        </form>
+
+        <div class="box-media">
+            <h3>Média</h3>
+            <input type="text" id="media" readonly>
+            <input type="text" id="situacao" readonly placeholder="Situação Final">
+        </div>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

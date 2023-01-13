@@ -1,0 +1,19 @@
+:root{
+    --bg-body: #ffffff;
+    --cor-fonte: #b9b9b9;
+    --cor-fonte-secundaria: #686868;
+    --cor-destaque: #5870D1;
+    --sombra: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    --branco: #ffffff;
+    --preto: #000000;
+    --cor-botao-calcular: #94D158;
+    --cor-botao-editar: #5870D1;
+    --cor-botao-limpar: #D15B65;
+    --cor-mensagem-erro: #D15B65;
+
+    --cor-reprovado: #D15B65;
+    --cor-aprovado: #94D158;
+    --cor-recuperacao: #e0d205;
+
+    --fonte-principal: "Roboto", sans-serif;
+}

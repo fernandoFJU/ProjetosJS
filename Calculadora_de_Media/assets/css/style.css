@@ -1,0 +1,107 @@
+@import url("./reset.css");
+@import url("./variaveis.css");
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-body);
+    font-family: var(--fonte-principal);
+    padding: 2rem 1rem;
+}
+
+header h1{
+    font-size: 2rem;
+    color: var(--preto);
+    font-weight: 700;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+#formulario{
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.form-group label{
+    font-size: .8rem;
+    color: var(--cor-fonte-secundaria);
+    margin-bottom: .2rem;
+}
+.form-group input{
+    font-size: 1rem;
+    color: var(--preto);
+    outline: none;
+    border-bottom: 1px solid var(--cor-fonte);
+    padding: .3rem 0rem;
+}
+.form-group .mensagem-erro{
+    font-size: .8rem;
+    color: var(--cor-mensagem-erro);
+    margin-top: .2rem;
+}
+.button-group{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    column-gap: 10px;
+}
+.botao{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .6rem 1rem;
+    flex: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#btnCalcular{
+    background-color: var(--cor-botao-calcular);
+}
+#btnLimpar{
+    background-color: var(--cor-botao-limpar);
+    color: var(--branco);
+}
+
+.box-media{
+    max-width: 320px;
+    width: 100%;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.box-media h3{
+    font-size: 1.5rem;
+    color: var(--cor-fonte-secundaria);
+    font-weight: 700;
+    text-align: center;
+}
+#media, #situacao{
+    font-size: 1rem;
+    color: var(--preto);
+    outline: none;
+    border: 1px solid var(--cor-fonte);
+    text-align: center;
+    padding: .5rem 0rem;
+    font-weight: 600;
+}
+#situacao{
+    text-transform: uppercase;
+}
+
+.aprovado{
+    background-color: var(--cor-aprovado);
+}
+.reprovado{
+    background-color: var(--cor-reprovado);
+    color: var(--branco);
+}
+.recuperacao{
+    background-color: var(--cor-recuperacao);
+}
