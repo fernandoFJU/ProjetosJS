@@ -10,10 +10,11 @@ body{
 
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     max-width: 80rem;
     margin: 0 auto;
 }
@@ -62,15 +63,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 600px;
+    width: 100%;
 }
 .game__titulo{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-weight: 700;
     font-size: 2.5rem;
     color: var(--cor-titulo);
 }
-
-.game__escolha{
+.alternativas{
+    width: 100%;
+}
+.alternativa{
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -78,20 +83,44 @@ body{
     font-size: 1.5rem;
     border: .1rem solid rgba(86, 165, 235, .25);
     background-color: var(--branco);
+    transition: transform 150ms;
 }
-.game__escolha:hover{
+.alternativa:hover{
     cursor: pointer;
     box-shadow: var(--sombra);
     transform: translateY(-.1rem);
     transition: transform 150ms;
 }
-.escolha__alternativa{
+.alternativa__letra{
     padding: 1rem 0;
     text-align: center;
     width: 4rem;
     background-color: var(--cor-botao);
     color: var(--branco);
 }
-.escolha__resposta{
+.alternativa__texto{
     padding: 1rem 1.5rem;
+}
+
+.informacoes{
+    margin-top: 2rem;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+}
+#placar{
+    color: var(--cor-titulo);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer{
+    padding: 1rem;
+}
+footer p{
+    text-align: center;
+    font-size: .8rem;
 }

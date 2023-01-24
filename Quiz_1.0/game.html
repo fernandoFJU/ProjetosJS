@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,25 +13,34 @@
         <div class="container">
             <div class="game">
                 <h2 class="game__titulo" id="pergunta">Quantos anos você tem?</h2>
-                <div class="game__escolha">
-                    <p class="escolha__alternativa">A</p>
-                    <p class="escolha__resposta" data-resposta="1">Escolha 1</p>
-                </div>
-                <div class="game__escolha">
-                    <p class="escolha__alternativa">B</p>
-                    <p class="escolha__resposta" data-resposta="1">Escolha 2</p>
-                </div>
-                <div class="game__escolha">
-                    <p class="escolha__alternativa">C</p>
-                    <p class="escolha__resposta" data-resposta="1">Escolha 3</p>
-                </div>
-                <div class="game__escolha">
-                    <p class="escolha__alternativa">D</p>
-                    <p class="escolha__resposta" data-resposta="1">Escolha 4</p>
-                </div>
+                <ul class="alternativas">
+                    <li id="alternativaA" data-resposta="1A" class="alternativa" onclick="verificarSeAcertou(this, this)">
+                        <p class="alternativa__letra">A</p>
+                        <p class="alternativa__texto">Escolha 1</p>
+                    </li>
+                    <li id="alternativaB" data-resposta="2A" class="alternativa" onclick="verificarSeAcertou(this, this)">
+                        <p class="alternativa__letra">B</p>
+                        <p class="alternativa__texto">Escolha 2</p>
+                    </li>
+                    <li id="alternativaC" data-resposta="3A" class="alternativa" onclick="verificarSeAcertou(this, this)">
+                        <p class="alternativa__letra">C</p>
+                        <p class="alternativa__texto">Escolha 3</p>
+                    </li>
+                    <li id="alternativaD" data-resposta="4A" class="alternativa" onclick="verificarSeAcertou(this, this)">
+                        <p class="alternativa__letra">D</p>
+                        <p class="alternativa__texto">Escolha 4</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="informacoes">
+                <span id="numero-questao">Questão <span id="numero"></span> de <span id="total"></span></span>
+                <span id="placar">10 pontos</span>
             </div>
         </div>
 
+        <footer>
+            <p>Desenvolvido por Fernando Oliveira © 2023</p>
+        </footer>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
