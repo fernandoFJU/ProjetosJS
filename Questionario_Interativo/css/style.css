@@ -1,0 +1,112 @@
+@import url("./reset.css");
+@import url("./variaveis.css");
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-body);
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    padding: 3rem 0;
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    height: 95vh;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container__titulo{
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--cor-titulo);
+}
+
+#progress_bar {
+    background-color: var(--cor-barra-progresso);
+    width: 20%;
+    height: 10px;
+    transition: all 100ms ease-in-out;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.container__questoes{
+    background-color: #ffffff;
+    padding: 60px;
+    text-align: left;
+    width: 100%;
+}
+
+.questao__titulo{
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--cor-titulo);
+}
+
+.questao__pergunta{
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--cor-fonte);
+}
+
+.questao__resposta{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.questao__enviar{
+    font-size: 1.2rem;
+    padding: .8rem 2rem;
+    width: 20rem;
+    font-weight: 700;
+    text-align: center;
+    border: .1rem solid var(--cor-botao);
+    color: var(--cor-botao);
+    text-decoration: none;
+    margin: 2rem 0 0;
+    background-color: var(--branco);
+    display: block;
+    transition: all 150ms;
+}
+.questao__enviar:hover{
+    cursor: pointer;
+    box-shadow: var(--sombra);
+    transform: translateY(-.1rem);
+    transition: all 150ms;
+}
+
+#questao-2, #questao-3, #questao-4, #questao-5, #questao-6{
+    display: none;
+}
+
+#questao-6 .questao__resultado, 
+#questao-6 .resultado__descricao,
+#questao-6 .resultado__valor,
+#questao-6 .resultado__informacao{
+    text-align: center;
+}
+
+.resultado__valor{
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--cor-titulo);
+}
+
+.resultado__informacao{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--cor-fonte);
+}

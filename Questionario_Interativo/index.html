@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questionário Interativo</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+	<body>
+		<div class="container">
+
+			<h2 class="container__titulo">Perguntas de Segurança</h2>
+
+			<div id="progress_bar"></div>
+			<form class="container__questoes">
+				<div class="container__questao" id="questao-1">
+
+					<h2 class="questao__titulo">Questão 1</h2>
+					<h3 class="questao__pergunta">Você se preocupa em se tornar uma vítima de fraude?</h3>
+
+					<label for="questao-1-resposta-a" class="questao__resposta">
+						<input id="questao-1-resposta-a" type="radio" name="favelang" value="1" />
+						O que é Fraude?
+					</label>
+					<label for="questao-1-resposta-b" class="questao__resposta">
+						<input id="questao-1-resposta-b" type="radio" name="favelang" value="2" />
+						Nunca me preocupo
+					</label>
+					<label for="questao-1-resposta-c" class="questao__resposta">
+						<input id="questao-1-resposta-c" type="radio" name="favelang" value="3" />
+						Sim, eu me preocupo muito com isso!
+					</label>
+
+					<div id="submit1" class="questao__enviar">Enviar Resposta</div>
+
+				</div>
+
+				<div class="container__questao" id="questao-2">
+
+					<h2 class="questao__titulo">Questão 2</h2>
+					<h3 class="questao__pergunta">Você utiliza a mesma senha para tudo?</h3>
+
+					<label for="questao-2-resposta-a" class="questao__resposta">
+						<input id="questao-2-resposta-a" type="radio" name="favelang" value="1" />
+						Sim!
+					</label>
+					<label for="questao-2-resposta-b" class="questao__resposta">
+						<input id="questao-2-resposta-b" type="radio" name="favelang" value="2" />
+						Só para as senhas de cartão de crédito
+					</label>
+					<label for="questao-2-resposta-c" class="questao__resposta">
+						<input id="questao-2-resposta-c" type="radio" name="favelang" value="3" />
+						Não, todas são diferentes!
+					</label>
+
+					<div id="submit1" class="questao__enviar">Enviar Resposta</div>
+					
+				</div>
+
+				<div class="container__questao" id="questao-3">
+
+					<h2 class="questao__titulo">Questão 3</h2>
+					<h3 class="questao__pergunta">Você confia em um e-mail enviado pelas suas costas pedindo sua
+						senha?</h3>
+
+					<label for="questao-3-resposta-a" class="questao__resposta">
+						<input id="questao-3-resposta-a" type="radio" name="favelang" value="1" />
+						Sim, é o banco afinal
+					</label>
+					<label for="questao-3-resposta-b" class="questao__resposta">
+						<input id="questao-3-resposta-b" type="radio" name="favelang" value="2" />
+						Se parece oficial, sim
+					</label>
+					<label for="questao-3-resposta-c" class="questao__resposta">
+						<input id="questao-3-resposta-c" type="radio" name="favelang" value="3" />
+						De jeito nenhum, um banco nunca pedirá a senha de sua conta
+					</label>
+
+					<div id="submit1" class="questao__enviar">Enviar Resposta</div>
+					
+				</div>
+
+				<div class="container__questao" id="questao-4">
+
+					<h2 class="questao__titulo">Questão 4</h2>
+					<h3 class="questao__pergunta">Você costuma usar cartão de crédito virtual em compras online?</h3>
+
+					<label for="questao-4-resposta-a" class="questao__resposta">
+						<input id="questao-4-resposta-a" type="radio" name="favelang" value="1" />
+						Não
+					</label>
+					<label for="questao-4-resposta-b" class="questao__resposta">
+						<input id="questao-4-resposta-b" type="radio" name="favelang" value="2" />
+						Raramente uso
+					</label>
+					<label for="questao-4-resposta-c" class="questao__resposta">
+						<input id="questao-4-resposta-c" type="radio" name="favelang" value="3" />
+						Sim, com certeza!
+					</label>
+
+					<div id="submit1" class="questao__enviar">Enviar Resposta</div>
+					
+				</div>
+
+				<div class="container__questao" id="questao-5">
+
+					<h2 class="questao__titulo">Questão 5</h2>
+					<h3 class="questao__pergunta">Você compartilha seu PIN com alguém?</h3>
+
+					<label for="questao-5-resposta-a" class="questao__resposta">
+						<input id="questao-5-resposta-a" type="radio" name="favelang" value="1" />
+						Sim, qualquer um que pedir por isso
+					</label>
+					<label for="questao-5-resposta-b" class="questao__resposta">
+						<input id="questao-5-resposta-b" type="radio" name="favelang" value="2" />
+						Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar
+					dinheiro para mim
+					</label>
+					<label for="questao-5-resposta-c" class="questao__resposta">
+						<input id="questao-5-resposta-c" type="radio" name="favelang" value="3" />
+						Nunca!
+					</label>
+
+					<div id="submit1" class="questao__enviar">Enviar Resposta</div>
+					
+				</div>
+
+				<div class="container__questao" id="questao-6">
+
+					<h2 class="questao__titulo questao__resultado">Obrigado por responder a pesquisa!</h2>
+					<h3 class="questao__pergunta resultado__descricao">Seu score de segurança é:</h3>
+					<h1 id="printtotalscore" class="resultado__valor">10</h1>
+					<p id="printscoreinfo" class="resultado__informacao">acima</p>
+
+				</div>
+			</form>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
