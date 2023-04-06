@@ -48,3 +48,19 @@ var swiper = new Swiper(".breaking__container", {
         },
     }
 });
+
+
+// BACK TOP BTN
+
+const backTopbtn = document.querySelector(".back-top-btn");
+
+const showElemOnScroll = function (){
+    if(window.scrollY > 150){
+        backTopbtn.classList.add("active");
+    }
+    else{
+        backTopbtn.classList.remove("active")
+    }
+}
+
+window.addEventListener("scroll", showElemOnScroll);

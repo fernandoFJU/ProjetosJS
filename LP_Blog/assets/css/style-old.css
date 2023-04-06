@@ -800,7 +800,7 @@ p{
 .news_content{
     padding: 40px 15px;
     border-radius: 30px;
-    background-image: url("../img/subscribe-bg.png");
+    background-image: url("../assets/img/subscribe-bg.png");
     background-repeat: no-repeat;
     overflow: hidden;   
     background-position: center center;
